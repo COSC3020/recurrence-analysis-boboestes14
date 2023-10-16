@@ -37,16 +37,16 @@ To start we need the recurrence relation, which should be
 T(n) = {1, if n $\leq 1; 3t(\frac{n}{3})+n^5,$ else. 
 Using this we can turn this into an euation that looks like this
 
-$ 3^iT(\frac{n}{3^i})+ \sum_{j=0}^{i-1} (3^j(\frac{n}{3^j})^5)$
+$3^iT(\frac{n}{3^i})+ \sum_{j=0}^{i-1} (3^j(\frac{n}{3^j})^5)$
 
 We can set i to $ \log_3{n} $ and we can also take a $ n^5 $ out of the sumation, 
 because it is in every equation and never changes, we can also ignore the sumation
 becasue it is a constant
 
-$ 3^{\log_3{n}}T(\frac{n}{3^{\log_3{n}}})+ n^5$
+$3^{\log_3{n}}T(\frac{n}{3^{\log_3{n}}})+ n^5$
 
-$ nT(1)+ n^5$
+$nT(1)+ n^5$
 
-$ n+ n^5 \in O n^5$
+$n+ n^5 \in O n^5$
 
 
